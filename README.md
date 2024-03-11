@@ -16,27 +16,23 @@
 
 ## このプロジェクトの目的
 
-本書では、プログラミング言語として**C++**が採用されています。
+本書では、プログラミング言語として **C++** が採用されています。
 
-残念なことに、私は**C++**がわかりません。
-そこで、自分用に、サンプルコードの言語を**Python**に変えていきたいと思います。
+残念なことに、私は **C++** がわかりません。
+そこで、自分用に、サンプルコードの言語を **Python** に変えていきたいと思います。
 
 ただ、やみくもにサンプルコードの言語を変更しても、ちゃんと動いているかわからないので、
-まずは、**C++**のサンプルをビルドできるようにし、本来の動作を確認できるようにします。
+まずは、 **C++** のサンプルをビルドできるようにし、本来の動作を確認できるようにします。
 
 ### 手順
 
 ```mermaid
-graph TD;
-    f0["`C++環境準備
-    (macOS+vscodeでC++をビルド可能に)`"]
-    f1["`サンプルコードの各ステップを修正
-    (ビルドし、動作を確認する)`"]
-    f2["`Python環境準備
-    (macOS+vscodeでPythonを実行可能に)`"]
-    f3["`サンプルコードの各ステップをPythonに変更
-    (実行し動作確認する)`"]
-    f0-->f1->f2->f3
+flowchart LR
+    f0["`**C++環境準備**`"]
+    f1["`**サンプルコードの各ステップを修正**`"]
+    f2["`**Python環境準備**`"]
+    f3["`**サンプルコードの各ステップをPythonに変更**`"]
+    f0-->f1-->f2-->f3
 ```
 
 ## フェーズ0: C++環境準備
@@ -48,7 +44,7 @@ graph TD;
 - Xcode command line tool(or xcode) [^2]
 - Homebrew [^3]
 
-Homebrew経由で、**GLFW**と**GLEW**ライブラリをインストールします。
+Homebrew経由で、**GLFW** と **GLEW** ライブラリをインストールします。
 
 ```shell
 brew install glfw glew
@@ -58,9 +54,9 @@ brew install glfw glew
 
 サンプルコードには、WindowsやLinux、macOS(xcode)用のプロジェクトファイルが含まれています。
 
-ただ、私の開発環境は、**macOS**と**vscode**です。
+ただ、私の開発環境は、**macOS** と **vscode** です。
 
-そこで、サンプルコードの不要なプロジェクトファイルは一旦削除し、[gillesboisson/vscode_opengl_glfw_template: VSCode Project template for glfw opengl development](https://github.com/gillesboisson/vscode_opengl_glfw_template) を参考 [^4] に、**Makefile**と**vscodeのタスク**を使ってビルドできるようにします。
+そこで、サンプルコードの不要なプロジェクトファイルは一旦削除し、[gillesboisson/vscode_opengl_glfw_template: VSCode Project template for glfw opengl development](https://github.com/gillesboisson/vscode_opengl_glfw_template) を参考 [^4] に、 **Makefile** と **vscodeのタスク** を使ってビルドできるようにします。
 
 ## フェーズ1： サンプルコードの各ステップを修正
 
