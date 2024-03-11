@@ -15,6 +15,7 @@ APP_NAME = main
 
 SRCS = $(SRC_PATH)/*.cpp
 OBJS = $(OBJ_PATH)/*.o
+HEADERS = $(SRC_PATH)/*.h
 APP_PATH = $(BIN_PATH)/$(APP_NAME)
 
 SRC= $(wildcard $(SRCS))
@@ -49,7 +50,7 @@ LINKER_FLAGS = -lglfw  -lGLEW -framework Cocoa -framework OpenGL -framework IOKi
 
 # APP_NAME specifies the name of our exectuable
 
-$(OBJ_PATH)/%.o: $(SRC_PATH)/%.cpp
+$(OBJ_PATH)/%.o: $(SRC_PATH)/%.cpp $(HEADERS)
 	$(CC) -o $@ -c $< $(COMPILER_FLAGS)
 
 #This is the target that compiles our executable
