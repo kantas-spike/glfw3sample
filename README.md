@@ -62,6 +62,52 @@ brew install glfw glew
 
 そこで、サンプルコードの不要なプロジェクトファイルは一旦削除し、[gillesboisson/vscode_opengl_glfw_template: VSCode Project template for glfw opengl development](https://github.com/gillesboisson/vscode_opengl_glfw_template) を参考 [^4] に、**Makefile**と**vscodeのタスク**を使ってビルドできるようにします。
 
+## フェーズ1： サンプルコードの各ステップを修正
+
+step00〜step40までのビルド環境を修正
+
+- [x] step00
+- [x] step01
+- [x] step02
+- [x] step03
+- [x] step04
+- [x] step05
+- [x] step06
+- [x] step07
+- [x] step08
+- [x] step09
+- [x] step10
+- [x] step11
+- [x] step12
+- [x] step13
+- [x] step14
+- [x] step15
+- [x] step16
+- [x] step17
+- [x] step18
+- [x] step19
+- [x] step20
+- [x] step21
+- [x] step22
+- [x] step23
+- [x] step24
+- [x] step25
+- [x] step26
+- [x] step27
+- [x] step28
+- [x] step29
+- [x] step30
+- [x] step31
+- [x] step32
+- [x] step33
+- [x] step34
+- [x] step35
+- [x] step36
+- [x] step37
+- [x] step38
+- [x] step39
+- [x] step40
+
 [^1]: 本書は、絶版になっていますが、[「グラフィックス・アプリ」制作のためのOpenGL入門](https://www.kohgakusha.co.jp/books/detail/978-4-7775-2056-5)としても出版されていたようです。
 [^2]: [方法１（おすすめ）：コマンドラインコンパイ... # XCodeのインストール](https://www.isc.meiji.ac.jp/~be00085/ctips/install_xcode/#cmdlinetool)
 [^3]: [インストール # macOS（またはLinux）用パッケージマネージャー — Homebrew](https://brew.sh/ja/#install)
