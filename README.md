@@ -39,4 +39,30 @@ graph TD;
     f0-->f1->f2->f3
 ```
 
+## フェーズ0: C++環境準備
+
+### 必要なライブラリのインストール
+
+まず、以下をあらかじめインストールしておきます。
+
+- Xcode command line tool(or xcode) [^2]
+- Homebrew [^3]
+
+Homebrew経由で、**GLFW**と**GLEW**ライブラリをインストールします。
+
+```shell
+brew install glfw glew
+```
+
+### ビルドの仕組み
+
+サンプルコードには、WindowsやLinux、macOS(xcode)用のプロジェクトファイルが含まれています。
+
+ただ、私の開発環境は、**macOS**と**vscode**です。
+
+そこで、サンプルコードの不要なプロジェクトファイルは一旦削除し、[gillesboisson/vscode_opengl_glfw_template: VSCode Project template for glfw opengl development](https://github.com/gillesboisson/vscode_opengl_glfw_template) を参考 [^4] に、**Makefile**と**vscodeのタスク**を使ってビルドできるようにします。
+
 [^1]: 本書は、絶版になっていますが、[「グラフィックス・アプリ」制作のためのOpenGL入門](https://www.kohgakusha.co.jp/books/detail/978-4-7775-2056-5)としても出版されていたようです。
+[^2]: [方法１（おすすめ）：コマンドラインコンパイ... # XCodeのインストール](https://www.isc.meiji.ac.jp/~be00085/ctips/install_xcode/#cmdlinetool)
+[^3]: [インストール # macOS（またはLinux）用パッケージマネージャー — Homebrew](https://brew.sh/ja/#install)
+[^4]: [kantas-spike/vscode_opengl_glfw_template: VSCode Project template for glfw opengl development](https://github.com/kantas-spike/vscode_opengl_glfw_template?tab=readme-ov-file)
