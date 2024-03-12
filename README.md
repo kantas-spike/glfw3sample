@@ -307,6 +307,58 @@ step00〜step40までのビルド環境を修正
 - [x] step39
 - [x] step40
 
+## フェーズ2： Python環境準備
+
+以下に、サンプルプログラム Python版のリポジトリを用意しました。
+
+[kantas-spike/glfw3sample_for_python: 「GLFWによるOpenGL入門」のサンプルプログラム Python版](https://github.com/kantas-spike/glfw3sample_for_python)
+
+## フェーズ3: サンプルコードの各ステップをPythonに変更
+
+サンプルプログラムのPython化の進捗は以下になります。
+
+- [x] step00: python main.pyで起動できる、空のプログラムを作成.
+- [x] step01: glfwによるウィンドウ作成とプログラマブルシェーダーの仕組みを用意.(ただし、描画処理は未実装)
+- [x] step02: プログラマブルシェーダーにvertexとfragmentの各シェーダー用のソースを渡し利用可能にする.
+- [x] step03: シェーダー用ソースのコンパイルエラーやシェーダーリンク時のエラーを出力可能にする.
+- [x] step04: シェーダー用ソースを外部ファイルから読み込むように修正.
+- [x] step05: 頂点データから矩形を描画.
+- [x] step06: 独自のWindowクラスを用意し、window描画やUI操作関連処理をまとめる.
+- [x] step07: uniform変数 aspect を導入し、ウィンドウサイズに関わらず正方形を描画させる.
+- [x] step08: ウィンドウサイズに関わらず、正方形の表示サイズを固定に.
+- [x] step09: マウスカーソルの位置に正方形を表示するように修正.
+- [x] step10: マウスの左ボタンが押されている時のみ、正方形の表示位置を移動するように修正.
+- [x] step11: マウスホイールによるスクロールで、正方形を拡大縮小可能に.
+- [x] step12: Escキーによるアプリ終了と、矢印キーによる正方形の移動を可能に.
+- [x] step13: 変換行列を使って、平行移動と拡大縮小を実現.
+- [x] step14: ビュー変換行列を使って、視点の位置を移動.
+- [x] step15: 直交投影変換行列を使って、投影変換を実現.
+- [x] step16: 透視投影変換行列を使って、投影変換を実現.
+- [x] step17: 画角と縦横比にもとづく透視投影変換行列を使って、投影変換を実現.
+- [ ] step18
+- [ ] step19
+- [ ] step20
+- [ ] step21
+- [ ] step22
+- [ ] step23
+- [ ] step24
+- [ ] step25
+- [ ] step26
+- [ ] step27
+- [ ] step28
+- [ ] step29
+- [ ] step30
+- [ ] step31
+- [ ] step32
+- [ ] step33
+- [ ] step34
+- [ ] step35
+- [ ] step36
+- [ ] step37
+- [ ] step38
+- [ ] step39
+- [ ] step40
+
 [^1]: 本書は、絶版になっていますが、[「グラフィックス・アプリ」制作のためのOpenGL入門](https://www.kohgakusha.co.jp/books/detail/978-4-7775-2056-5)としても出版されていたようです。
 [^2]: [方法１（おすすめ）：コマンドラインコンパイ... # XCodeのインストール](https://www.isc.meiji.ac.jp/~be00085/ctips/install_xcode/#cmdlinetool)
 [^3]: [インストール # macOS（またはLinux）用パッケージマネージャー — Homebrew](https://brew.sh/ja/#install)
